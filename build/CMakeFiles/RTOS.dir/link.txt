@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/RTOS.dir/src/main.cpp.o CMakeFiles/RTOS.dir/src/kernel/scheduler.cpp.o CMakeFiles/RTOS.dir/src/kernel/semaphore.cpp.o CMakeFiles/RTOS.dir/src/profiler/profiler.cpp.o -o RTOS 

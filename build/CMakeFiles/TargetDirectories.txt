@@ -1,0 +1,3 @@
+/home/soujanya/new/build/CMakeFiles/RTOS.dir
+/home/soujanya/new/build/CMakeFiles/edit_cache.dir
+/home/soujanya/new/build/CMakeFiles/rebuild_cache.dir
