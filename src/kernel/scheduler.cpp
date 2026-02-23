@@ -4,16 +4,16 @@
 #include <thread>
 #include <chrono>
 
-void Scheduler::addTask(int id, int priority, int ticks, std::function<void(std::shared_ptr<Task>)> f) {
+void Scheduler::addTask(int id, int priority, int ticks, std::function<void(std::shared_ptr<Task>)> f) {   //Creates a new Task.       Adds it to readyQueue
     readyQueue.push_back(std::make_shared<Task>(id, priority, ticks, f));
 }
 
-void Scheduler::addReadyTask(std::shared_ptr<Task> task) {
+void Scheduler::addReadyTask(std::shared_ptr<Task> task) {   // Adds an existing task back into ready queue.
     readyQueue.push_back(task);
 }
 
 void Scheduler::run() {
-    Profiler profiler;
+    Profiler profiler;             //Step 1️⃣: Create Profiler object   Used to log task execution state.
 
     while (!readyQueue.empty()) {
         // pick highest priority ready task
